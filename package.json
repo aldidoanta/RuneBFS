@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch": "webpack --env.production=false --progress --colors --watch",
-    "build": "webpack --env.production --progress --colors --display-error-details"
+    "build": "webpack --env.production --progress --colors --display-error-details",
+    "serve": "./node_modules/.bin/http-server docs/ -p 3000"
   },
   "repository": {
     "type": "git",
@@ -25,6 +26,7 @@
     "extract-text-webpack-plugin": "^3.0.2",
     "file-loader": "^1.1.6",
     "html-webpack-plugin": "^2.30.1",
+    "http-server": "^0.11.1",
     "style-loader": "^0.20.2",
     "uglifyjs-webpack-plugin": "^1.1.8",
     "url-loader": "^0.6.2",
@@ -39,6 +41,7 @@
     "bootstrap": "^4.0.0",
     "bootstrap-select": "^1.13.1",
     "dom-to-image": "^2.6.0",
+    "global": "^4.3.2",
     "jquery": "^3.3.1",
     "localforage": "^1.6.0",
     "lz-string": "^1.4.4",
